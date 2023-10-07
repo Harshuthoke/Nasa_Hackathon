@@ -12,7 +12,9 @@ if(isset($_POST["submit"])){
 }
 ?>
 <html>
-  <head></head>
+  <head>
+    <link rel="icon" type="image/png" href="Images/fevicon.jpg">
+  </head>
   <style>
     *{
       margin: 0px;
