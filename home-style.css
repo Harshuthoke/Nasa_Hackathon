@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header .logo img {
+    width: 200px; /* Adjust the logo size as needed */
+}
+
+.video-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.video-section video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.satellite-section {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.satellite {
+    width: 100%;
+    height: 100%;
+    background-image: url('satellite.png'); /* Replace with your satellite image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: absolute;
+    left: 100%; /* Initially position the satellite outside the screen */
+}
+
+.main-content .info{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section1 {
+    background-color: #1e1e1e;
+}
+
+.section2 {
+    background-color: #030303;
+}
+
+.section3 {
+    background-color: #555;
+}
+.image-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    max-width: 80%;
+}
+
+.text-overlay p {
+    margin: 0;
+}
+
+.horizontal-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .horizontal-scroll-content {
+    display: inline-block;
+  }
+  
