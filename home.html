@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,72 +8,106 @@
     <link rel="icon" type="image/png" href="Images/fevicon.jpg">
     <link rel="stylesheet" href="home-style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="images/fevicon.jpg"/>
-        </div>
-    </header>
-
-    <div id="page1" class="section section1">
-        <section class="video-section">
-            <video autoplay loop muted poster="space.jpg">
-                <source src="images/video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="content">
-                <h1>Welcome to Orbital X</h1>
-                <p>Explore the universe with us!</p>
-            </div>
-        </section>
+    <div class="header">
+        <h1>Orbital X</h1>
     </div>
 
-    <div class="horizontal-scroll-container">
-        <div class="page page1">
-            <div class="row">
-                <div class="col-md-6">
-                    <section>
-                        <h2>Unlocking Earth's Mysteries with EMIT</h2>
-                        <p>The EMIT sensor, launched in July 2022, is an incredible tool in space science. But how does it work? EMIT uses hyperspectral visible and short-wave infrared sensors to capture detailed images of Earth's surface from space. It's like taking high-resolution pictures of the planet.</p>  
-                    </section>
+    <!-- INTRO -->
+    <div class="video-section">
+        <video autoplay loop muted poster="video-poster.jpg">
+            <source src="images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content-overlay">
+            <div class="intro-text">
+                <h2>Welcome to Our Website</h2>
+                <p>Explore our exciting content and offerings.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd SLIDE -->
+    <div class=" history container-fluid">
+        <div class="container text-center">
+            <h2>THE HISTORY</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 text-section">
+
+                <p>EMIT was developed at JPL and built by Ball Aerospace & Technologies. The instrument was launched on
+                    July 14, 2022, on a SpaceX Falcon 9 rocket from Cape Canaveral Space Force Station in Florida. EMIT
+                    was attached to the International Space Station (ISS) on July 17, 2022.
+                    EMIT began collecting science data on August 2, 2022. The instrument is expected to operate for at
+                    least five years.
+                </p>
+            </div>
+            <div class="col-md-6 interactive-section">
+                <!-- Add your interactive object here -->
+                <div>
+                    <h2>Interactive Object</h2>
+                    <!-- Add your interactive content here -->
                 </div>
-            
-        </div>
-        <div class="page page2">
-            <!-- Content for Page 2 -->
-        </div>
-        <div class="page page3">
-            <!-- Content for Page 3 -->
+
+            </div>
+            <div class="col-md-12 text-section text-center">
+
+                <h2><strong>But how does it work?</strong> </h2>
+                <p> EMIT uses special technology to look at how sunlight bounces off the ground. This sunlight has
+                    different colors, and these colors help scientists figure out what kind of rocks and minerals are on
+                    the ground. EMIT can look at big areas on the Earth's surface all at once, and it can even see small
+                    details.
+                    EMIT's information helps scientists make maps that show where dusty areas are. These maps are
+                    important because they help us understand how dust moves in the air and how it can change the
+                    Earth's climate.
+                </p>
+            </div>
         </div>
     </div>
+    <!-- ANIMATION -->
 
-    <div id="page2" class="section section2 horizontal-scroll-container">
-        <div class="container">
-           
+
+    <!-- THIRD SLIDE -->
+
+    <div class="outer-wrapper">
+        <div class="wrapper">
+            <div class="slide one">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sapiente, accusamus quos, sit eaque
+                facere reprehenderit maxime corrupti sed exercitationem alias quo? Dolorem sapiente in totam aperiam?
+                Saepe, quaerat incidunt.
+            </div>
+            <div class="slide two"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet facere veniam
+                explicabo odit harum, dolore aut at quaerat atque inventore. Minima repudiandae distinctio sunt
+                officiis, aliquam quis voluptate asperiores ut eos obcaecati fugiat necessitatibus, modi at vero
+                repellendus qui reprehenderit. Quia fuga dolores et veniam facilis inventore perferendis, tenetur totam.
+            </div>
+            <div class="slide three"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi quos, ipsa
+                ex explicabo, aspernatur atque voluptatum tempora repellat molestias ab magnam accusamus? Cupiditate
+                consequatur id voluptate quo nobis assumenda consequuntur ea perferendis, non quae culpa dolore in porro
+                deserunt?</div>
+            <div class="slide four"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quaerat quam sed
+                architecto necessitatibus, nesciunt ipsum similique blanditiis, ipsa magni aspernatur consequatur non
+                exercitationem cupiditate? Pariatur non nulla accusantium animi aperiam facilis maxime, in sequi eos
+                cumque, ipsam aliquam quasi adipisci necessitatibus natus, vel repellat. Repellat et ut accusantium eum?
             </div>
         </div>
     </div>
 
-    <div id="page3" class="section section3 horizontal-scroll-container">
-        <div class="image-container">
-            <img src="earth-aerial-view.jpg" alt="Aerial View of Earth" />
-            <div class="text-overlay">
-                <p>EMIT has a fascinating history. It was developed by NASA to study mineral dust sources on Earth. These dust sources can have a big impact on our climate. By understanding them better, we can improve our climate models and take steps to protect our environment.</p>
-            </div>
-        </div>
+    <div class="container-fluid" style="height: 100px; width: auto; background-color: black; padding: 50px;">
+        <p style="text-align: center; " class="impact_text">IMPACT ALERT</p>
     </div>
-
-   
-
-    <!-- Add more sections/pages as needed -->
-    <marquee behavior="slide" height="40%" direction="left">
-        IMPACT ALERT!
-    </marquee>
 
     <script src="script-home.js"></script>
 </body>
+
 </html>

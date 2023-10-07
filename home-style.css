@@ -5,30 +5,54 @@ body {
     background-color: #000;
     color: #fff;
 }
-.section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 24px;
-}
+
+/* Your existing CSS styles */
 
 .header {
-    position: fixed;
+    text-align: center;
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Padding for top and bottom */
+}
+
+/* Style for the video section */
+.video-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Style for the video */
+video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Style for the content overlay */
+.content-overlay {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2;
-    padding: 10px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay background color with opacity */
+    color: #fff; /* Text color on the overlay */
+}
+
+/* Style for the introductory text */
+.intro-text {
     text-align: center;
+    font-size: 24px;
+    padding: 20px;
 }
-
-.header .logo img {
-    width: 200px; /* Adjust the logo size as needed */
-}
-
 .video-section {
     position: relative;
     height: 100vh;
@@ -41,91 +65,23 @@ body {
     object-fit: cover;
 }
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    z-index: 1;
+.interactive-section {
+    padding: 20px; /* Add padding for spacing */
 }
 
-.content h1 {
-    font-size: 2.5rem;
+/* Style for the text section */
+.text-section {
+    padding: 20px; /* Add padding for spacing */
 }
 
-.content p {
-    font-size: 1.5rem;
-    margin-top: 20px;
+/* Responsive styling */
+@media (max-width: 768px) {
+    /* On smaller screens, make both sections stack vertically */
+    .interactive-section, .text-section {
+        width: 100%; /* Take up full width */
+    }
 }
 
-.satellite-section {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.satellite {
-    width: 100%;
-    height: 100%;
-    background-image: url('satellite.png'); /* Replace with your satellite image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right center;
-    position: absolute;
-    left: 100%; /* Initially position the satellite outside the screen */
-}
-
-.main-content .info{
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    color: black;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.section1 {
-    background-color: #1e1e1e;
-}
-
-.section2 {
-    background-color: #030303;
-}
-
-.section3 {
-    background-color: #555;
-}
-.image-container {
-    position: relative;
-}
-
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-    max-width: 80%;
-}
-
-.text-overlay p {
-    margin: 0;
-}
-
-.horizontal-scroll-container {
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  
-  .horizontal-scroll-content {
-    display: inline-block;
-  }
 marquee {
     overflow: hidden;
     white-space: nowrap;
@@ -142,8 +98,52 @@ marquee {
     font-size: 1000px;
 }
 
-  
-  
-  
-  
-  
+.history{
+    padding: 50px;
+    background-color: peachpuff;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+  }
+ 
+  .one {
+    background: #efdefe;
+  }
+  .two {
+    background: #a3f3d3;
+  }
+  .three {
+    background: #0bbaa0;
+  }
+  .four {
+    background: #00dfdf;
+  }
+   .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+    .outer-wrapper {
+      width: 100vh;
+      height: 100vw;
+      transform: rotate(-90deg) translateX(-100vh);
+      transform-origin: top left;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: relative;
+      scrollbar-width: none;
+          -ms-overflow-style: none;
+    }
+    ::-webkit-scrollbar {
+          display:none;
+        }
+
+     .impact_text{
+        font-family: 'Monoton', cursive;
+        color: aliceblue;
+        font-size: 50px;
+     }
