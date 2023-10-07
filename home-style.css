@@ -126,4 +126,27 @@ body {
   .horizontal-scroll-content {
     display: inline-block;
   }
+marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 60px;
+}
+
+.marquee p {
+    display: inline-block;
+    margin-right: 100%; /* Move text off-screen initially */
+    animation: marquee 15s linear infinite; /* Adjust the duration as needed */
+    font-size: 1000px;
+}
+
+  
+
+
+  
+  
+  
+  
   
