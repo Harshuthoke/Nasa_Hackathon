@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Image Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #222;
+        }
+
+        .satellite {
+            width: 100px; /* Initial width */
+            height: 100px; /* Initial height */
+            background-image: url('images/satellite.jpeg'); /* Replace with your image URL */
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            animation: moveAndEnlarge 5s linear infinite; /* Adjust duration as needed */
+        }
+
+        @keyframes moveAndEnlarge {
+            0% {
+                transform: translateX(100%) translateY(-50%) scale(1); /* Start from extreme right */
+            }
+            100% {
+                transform: translateX(-50%) translateY(-50%) scale(1.5); /* Move to the left and enlarge */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="satellite"></div>
+    </div>
+</body>
+</html>
