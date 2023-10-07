@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Image Animation</title>
+    <style>
+       
+
+       .container {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            min-height: 100vh;
+            background-color: #222;
+        }
+
+        .satellite {
+            width: 100px; /* Initial width */
+            height: 100px; /* Initial height */
+            background-image: url('images/satellite.jpeg'); /* Replace with your image URL */
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            transition: transform 0.5s ease; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <div class="container">
+        <div class="satellite" id="satellite"></div>
+    </div>
+    
+    <script>
+        const satellite = document.getElementById('satellite');
+        let scrolled = false;
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                if (!scrolled) {
+                    scrolled = true;
+                    satellite.style.transition = 'transform 0.5s ease';
+                    satellite.style.transform = 'translateX(-50%) translateY(-50%) scale(1.5) translateX(100px)';
+                }
+            } else {
+                // Scrolling up
+                if (scrolled) {
+                    scrolled = false;
+                    satellite.style.transition = 'transform 0.5s ease';
+                    satellite.style.transform = 'translateX(-50%) translateY(-50%) scale(1)';
+                }
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium earum consectetur distinctio quo, ipsam, impedit vitae repellendus iusto facilis harum a excepturi beatae! Voluptatibus tempore nobis officiis aspernatur nisi.
+    </h1>
+</body>
+</html>
