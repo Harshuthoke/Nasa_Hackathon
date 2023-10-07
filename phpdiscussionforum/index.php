@@ -24,7 +24,7 @@ if(isset($_POST["submit"])){
       background: #212523;
     }
     .container{
-      background: white;
+      background: black;
       width: 700px;
       margin: 0 auto;
       padding-top: 1px;
@@ -41,6 +41,7 @@ if(isset($_POST["submit"])){
     p{
       margin-top: 5px;
       margin-bottom: 5px;
+      color: white;
     }
     form{
       margin: 10px;
@@ -62,10 +63,22 @@ if(isset($_POST["submit"])){
       width: 100%;
     }
     button.reply{
-      background: orange;
+      background: skyblue;
+      color: black;
+    }
+
+    h4{
+      color: white;
+    }
+    h1{
+      text-align: center;
+      color: white;
     }
   </style>
   <body>
+    <div class="container">
+      <h1>ORBITAL X</h1>
+    </div>
     <div class="container">
       <?php
       $datas = mysqli_query($conn, "SELECT * FROM tb_data WHERE reply_id = 0"); // only select comment and not select reply
