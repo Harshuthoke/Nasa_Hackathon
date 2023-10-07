@@ -1,3 +1,4 @@
+/* Reset and basic styles */
 body {
     margin: 0;
     padding: 0;
@@ -7,23 +8,22 @@ body {
     color: #fff;
 }
 
-/* Your existing CSS styles */
-
+/* Header styles */
 .header {
     text-align: center;
-    background-color: #333; /* Background color */
-    color: #fff; /* Text color */
-    padding: 10px 0; /* Padding for top and bottom */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-/* Style for the video section */
+/* Video section styles */
 .video-section {
     position: relative;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     overflow: hidden;
 }
 
-/* Style for the video */
+/* Video styles */
 video {
     width: 100%;
     height: auto;
@@ -33,7 +33,7 @@ video {
     left: 0;
 }
 
-/* Style for the content overlay */
+/* Content overlay styles */
 .content-overlay {
     position: absolute;
     top: 0;
@@ -44,11 +44,11 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay background color with opacity */
-    color: #fff; /* Text color on the overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 
-/* Style for the introductory text */
+/* Introductory text styles */
 .intro-text {
     text-align: center;
     font-size: 24px;
@@ -148,3 +148,23 @@ marquee {
         color: aliceblue;
         font-size: 50px;
      }
+
+     .horizontal-scrolling-section {
+        width: 100%;
+        height: 100vh; /* Set the height as per your design */
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap; /* Prevents line breaks in slides */
+        display: flex;
+        scroll-snap-type: x mandatory; /* Enable horizontal scrolling snapping */
+    }
+    
+    /* Individual slide styles */
+    .slide {
+        width: 100vw; /* Adjust slide width as needed */
+        height: 100%; /* Set slide height to match the section height */
+        scroll-snap-align: start; /* Snap to the start of each slide */
+        display: inline-block; /* Display slides inline */
+        vertical-align: top; /* Align slides to the top */
+        /* Add your slide content styling here */
+    }
