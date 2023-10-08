@@ -6,7 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background-image: url(images/istockphoto-586058260-170667a.png);
+    background-color: rgb(220, 220, 220);
 
 }
 
@@ -25,8 +25,11 @@ body {
 .text p {
     font-size: 30px;
     padding: 0;
+    position: relative;
     font-family: 'Amatic SC', cursive;
 }
+
+
 
 .img {
     position: absolute;
@@ -35,12 +38,16 @@ body {
     z-index: 1;
 }
 
+.a{
+    top: 50%;
+    left: 50%;
+}
+
 .img1 {
     top: 5%;
     left: 53%;
     
 animation: circle1 30s linear infinite;
-
 }
 
 .img2 {
@@ -49,7 +56,21 @@ animation: circle1 30s linear infinite;
     animation: circle2 30s linear infinite;
 
 }
+.img8 {
+    
+    height: 50px;
+    width: 100px;
+    margin-top: 50px;
+    margin-right: 300px;
+}
 
+.img9 {
+    
+    height: 50px;
+    width: 100px;
+    margin-left: 600px;
+    margin-top: 50px;
+}
 .img3 {
     top: -5%;
     left: 30%;
@@ -57,6 +78,96 @@ animation: circle1 30s linear infinite;
 animation: circle3 40s linear infinite;
 
 }
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+    background-image: url(images/istockphoto-586058260-170667a.png);
+    color: black;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-left: 450px;
+    margin-top: 50px;
+    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+  button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  button:hover svg {
+    transform: rotate(45deg);
+  }
+
+  
+
+
+
+  
+  
+
+.links a {
+    margin-top: 480px;
+    
+    margin-left: 350px;
+}
+
+.links2 {
+    display: flex;
+    justify-content: center;
+}
+
+.links2 p {
+    margin-top: 500px;
+    
+    margin-left: 400px;
+}
+
 
 .img4 {
     left: 80%;
