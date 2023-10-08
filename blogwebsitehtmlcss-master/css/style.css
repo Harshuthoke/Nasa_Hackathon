@@ -48,6 +48,19 @@ body {
     background-size: var(--bg-size);
 }
 
+.main_header{
+    background-color: black;
+}
+
+h1.text-uppercase.main_heading {
+    color: white;
+}
+
+
+
+p.main_heading__para{
+    color: #d0cecf;
+}
 .main_heading {
     font-family: var(--title);
     font-weight: bold;
