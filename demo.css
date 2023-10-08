@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+img.d-block{
+    width: 120%;
+}
+
 header {
     z-index: 999;
     position: absolute;
