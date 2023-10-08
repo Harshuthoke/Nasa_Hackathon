@@ -1,119 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>EMIT into the future!</title>
-    <link rel="icon" type="image/png" href="Images/fevicon.jpg">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Landing Page With Background Video Slider |</title>
+    <link rel="stylesheet" href="home_new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-
 <body>
-    <div class="app">
-        <a href="home_new.html">
-            <div class="cardList">
-                <button class="cardList__btn btn btn--left">
-                    <div class="icon">
-                        <svg>
-                            <use xlink:href="#arrow-left"></use>
-                        </svg>
-                    </div>
-                </button>
-                <div class="cards__wrapper">
-                    <div class="card current--card">
-                        <div class="card__image">
-                            <a href="impact.html">
-                                <img src="images/astronaut.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card next--card">
-                        <div class="card__image">
-                            <a href="impact.html">
-                                <img src="images/dream_world.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card previous--card">
-                        <div class="card__image">
-                            <a href="impact.html">
-                                <img src="images/portal.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <button class="cardList__btn btn btn--right">
-                    <div class="icon">
-                        <svg>
-                            <use xlink:href="#arrow-right"></use>
-                        </svg>
-                    </div>
-                </button>
+
+    <header>
+        <a href="#" class="brand">ORBITAL X</a>
+        <div class="menu-btn active"></div>
+        <div class="navigation active">
+        <div class="navigation-items active">
+        <a href="#">Home</a>
+        <a href="#">About </a>
+        <a href="#">Explore</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a> 
+        </div>
+        </div>
+    </header>
+    
+    
+
+    <section class="home">
+        <video class="video-slide active" src="images/video1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/video2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/video3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/video4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/video5.mp4" autoplay muted loop></video>
+
+        <div class="content active">
+            <h1>Orbital<br><span>X</span></h1>
+            <p><h3>the Mysteries of Space: NASA's EMIT Shines Light on the Universe's Secrets!</h3></p>
+            <a href="community.html">Explore Community</a>
+        </div>
+
+
+        <div class="content">
+            <h1>GreenHouses</h1>
+            <p><h3>EMIT's Greenhouses: Sowing the Seeds for Sustainability in Space </h3></p>
+            <a href="#">Read More</a>
+        </div>
+
+
+        <div class="content">
+            <h1>Imaging <br><span>Spectroscopy</span></h1>
+            <p><h3>Imaging Spectroscopy: Peering into the Invisible Universe</h3></p>
+            <a href="#">Read More</a>
+        </div>
+
+
+        <div class="content">
+            <h1>Science</h1>
+            <p><h3>Science: Illuminating the Path of Discovery</h3></p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="content">
+            <h1>About EMIT</h1>
+            <p>At its core, EMIT represents the convergence of cutting-edge technology, visionary ambition, and the indomitable human spirit. It's a mission poised to rewrite the chapters of space exploration history, aiming not only for Mars but also contemplating the vast expanse of interstellar travel.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="media-icons">
+            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+            <a href="#"> <i class="fab fa-twitter"></i></a>
             </div>
-            <div class="infoList">
-                <div class="info__wrapper">
-                    <a href="impact.html" class="info current--info">
-                        <h1 class="text name">Explorer</h1>
-                        <h4 class="text location">Cosmic</h4>
-                        <p class="text description">Unleash Your Curiosity</p>
-                    </a>
-                    <a href="impact.html" class="info next--info">
-                        <h1 class="text name">Astronomer</h1>
-                        <h4 class="text location">Inquisitive</h4>
-                        <p class="text description">Adventure is never far away</p>
-                    </a>
-                    <a href="impact.html" class="info previous--info">
-                        <h1 class="text name">Voyager</h1>
-                        <h4 class="text location">Adventurous</h4>
-                        <p class="text description">Let your dreams come true</p>
+
+            <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold">Unveiling Earth's True Colors</h1>
+        <div class="col-lg-6 mx-auto">
+            <br>
+          <p class="lead mb-4">"EMIT NASA utilizes advanced remote sensing technology to capture and interpret the intricate dance of light interacting with Earth's surface. By measuring and analyzing the reflected sunlight across different wavelengths, EMIT unveils the hidden details of surface reflectance, providing invaluable insights into our planet's dynamic ecosystems."</p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <div class="container px-5">
+            <img src="images/Surface Reflectance.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+
+        </div>
+        </div>
+      </div>
+
+      
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <iframe id="myIframe" src="chart/index.html" frameborder="0" style="height: 100%; width: 100%;"></iframe>
+
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="chart/emit_data.json">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">View JSON</button>
                     </a>
                 </div>
             </div>
-            <a href="home_new.html">
-            <div class="app__bg">
-                
-                    <div class="app__bg__image current--image">
-                        
-                            <img src="images/astronaut.jpg" alt="" />
-                        
-                    </div>
-                  
-                <div class="app__bg__image next--image">
-                    <a href="./home.html">
-                        <img src="images/dream_world.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="app__bg__image previous--image">
-                    <a href="./home.html">
-                        <img src="images/portal.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-            </a> 
-        </a>
-    </div>
-    <div class="loading__wrapper">
-        <div class="loader--text">Please Wait...</div>
-        <div class="loader">
-            <span></span>
         </div>
     </div>
-    <svg class="icons" style="display: none;">
-        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-            <polyline points='328 112 184 256 328 400'
-                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-        </symbol>
-        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-            <polyline points='184 112 328 256 184 400'
-                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-        </symbol>
-    </svg>
+    <div>
+        <iframe src="opener.html" frameborder="0" style="width: 100vw; height: 100vh; border: none; overflow: hidden; "></iframe>
+    </div>
     
-    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
-    <script src="./script.js"></script>
-</body>
+    <div class="container-fluid">
+        <!-- Add your iframe here -->
+       
+    </div>
 
+    <script type="text/javascript">
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        //script for video navigation
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            })
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            })
+
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            })
+
+
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            })
+        })
+
+        
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
