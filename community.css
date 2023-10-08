@@ -38,12 +38,16 @@ body {
     z-index: 1;
 }
 
+.a{
+    top: 50%;
+    left: 50%;
+}
+
 .img1 {
     top: 5%;
     left: 53%;
     
 animation: circle1 30s linear infinite;
-
 }
 
 .img2 {
