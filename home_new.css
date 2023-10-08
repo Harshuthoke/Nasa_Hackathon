@@ -8,6 +8,10 @@
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Set a specific height for your header, adjust as needed */
     z-index: 999;
     position: absolute;
     top: 0;
@@ -20,42 +24,14 @@ header {
     transition: 0.5s ease;
 }
 
-header .brand{
-    color: #fff; 
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
+.brand{
     text-decoration: none;
+    color: #fff; /* Optional: Set the text color to white or your preferred color */
+    font-size: 24px; /* Optional: Adjust the font size as needed */
+    font-weight: bold; /* Optional: Add font-weight for emphasis */
+
 }
 
-header .navigation{
-    position: relative;
-}
-
-header .navigation .navigation-items a{
-    position: relative;
-    color: #fff; 
-    font-size: 1em;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 30px;
-    transition: 0.3s ease;
-}
-
-header .navigation .navigation-items a:before{
-    content: '';
-    position: absolute;
-    background: #fff; 
-    width: 0;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s ease;
-}
-
-header .navigation .navigation-items a:hover:before{
-    width: 100%;
-}
 
 section{
     padding: 300px 200px;
