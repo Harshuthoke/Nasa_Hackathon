@@ -35,8 +35,10 @@ body {
     z-index: 1;
 }
 
-
-
+.a{
+    top: 50%;
+    left: 50%;
+}
 
 .img1 {
     top: 5%;
