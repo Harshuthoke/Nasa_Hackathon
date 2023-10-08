@@ -8,6 +8,10 @@
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Set a specific height for your header, adjust as needed */
     z-index: 999;
     position: absolute;
     top: 0;
@@ -20,14 +24,9 @@ header {
     transition: 0.5s ease;
 }
 
-header .brand{
-    color: #fff; 
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
+.brand{
     text-decoration: none;
 }
-
 
 header .navigation{
     position: relative;
